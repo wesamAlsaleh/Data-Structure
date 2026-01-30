@@ -11,10 +11,17 @@ public class EThree {
      */
     public static void reverseStack(SingleArrayStack stack) {
         // create the reversed stack
-        var reversedStack = new SingleArrayStack();
+        var reversedStack = new SingleArrayStack(stack.size());
 
-        // if the stack is not empty
-        if (!stack.isEmpty()) {
+        // while the stack is not empty
+        while (!stack.isEmpty()) {
+            reversedStack.push(stack.pop());
         }
+
+//        // replace the old stack with the new stack
+//        stack = reversedStack;
+
+        // print the reversed stack
+        reversedStack.printStack();
     }
 }

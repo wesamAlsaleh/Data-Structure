@@ -1,6 +1,7 @@
 package com.avocadogroup.datastructure;
 
 import com.avocadogroup.datastructure.exercises.ETwo;
+import com.avocadogroup.datastructure.stacks.SingleArrayStack;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -8,6 +9,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import java.util.Arrays;
 
 import static com.avocadogroup.datastructure.exercises.EOne.rotate;
+import static com.avocadogroup.datastructure.exercises.EThree.reverseStack;
+
 
 import static com.avocadogroup.datastructure.exercises.ETwo.validParentheses;
 
@@ -31,7 +34,15 @@ public class DataStructureApplication {
 //        System.out.println("Output: " + validParentheses("([)]") + " Expected: false");
 
         // Ex3
-
+//        SingleArrayStack stack = new SingleArrayStack(4);
+//        stack.push('A');
+//        stack.push('B');
+//        stack.push('C');
+//        stack.push('D');
+//        System.out.println("Stack before reversing:");
+//        stack.printStack();
+//        System.out.println("Stack after reversing:");
+//        reverseStack(stack);
 
     }
 
