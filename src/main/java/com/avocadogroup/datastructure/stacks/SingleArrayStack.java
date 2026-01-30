@@ -47,6 +47,11 @@ public class SingleArrayStack {
         return (top == maxSize - 1);
     }
 
+    public int size() {
+        // return the index + 1 as the size
+        return top + 1;
+    }
+
     public char top() {
         // return the last element
         return stackArray[top];
